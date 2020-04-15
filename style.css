@@ -1,0 +1,47 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+header{
+  background-color:white;
+  height:8vh;
+  box-shadow: 0px 3px 5px 1.5px grey;
+  padding:8px;
+
+}
+.first h6{
+  text-align:center;
+  margin-top:8%;
+  color:#333;
+}
+.first h1{
+  text-align:center;
+  font-size: 6em;
+  color:red;
+  margin-top: 2%;
+}
+.second input{
+  background: white;
+  width: 80%;
+  padding: 10px;
+  border-radius: 5px;
+  border:2px solid black;
+  outline: none;
+}
+
+.second input:focus{
+  border:2px solid red;
+}
+.second input[placeholder="Start Typing..."]{
+  color:#333;
+}
+.scoreboard{
+
+  padding: 2%;
+}
+.scoreboard h3{
+  display: inline-block;
+  margin:8%;
+}
