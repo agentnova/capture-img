@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta property="og:image" content="https://raw.githubusercontent.com/agentnova/speed-word/master/images%20(2).png"/>
+    <meta property="og:description" content="SPEED TYPING GAME  IN JAVASCRIPT" />
+    <!-- Chrome, Firefox OS and Opera --> 
+    <meta name="theme-color" content="darkred"> 
+    <!-- Windows Phone --> 
+    <meta name="msapplication-navbutton-color" content="darkred"> 
+    <!-- iOS Safari --> 
+    <meta name="apple-mobile-web-app-status-bar-style" content="darkred">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+
+<div id="result">
+
+
+
+
+<h1>Score <span style="color:green;" id="finalscore">0</span></h1>
+
+
+
+
+<div class="foot">
+<button onclick="location.reload()">Restart</button>
+</div>
+
+
+
+</div>
+
+<div id="main">
+<h6>Type the Given word within <span style="color:red">5</span> Seconds</h6>
+
+
+
+
+<h5 align="center">The game will begin in...</h5>
+<h1 id="timer"></h1>
+
+
+</div>
+<div id="secondmain">
+    <h2 align="center" style="border:2px solid white;  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);height:auto;padding-top:8px;padding-bottom:10px;">SPEED WORD</h1>
+
+    <div class="first">
+
+        <h6>Type the Given word within <span style="color:red">5</span> Seconds</h6>
+
+
+        <h1 id="arrword">Hello</h1>
+    </div>
+    <div align="center" class="second">
+
+        <input type="text" id="wordinput" placeholder="Start Typing..." >
+
+    </div>
+    <h5 align="center" style="margin:2%;" id="message"></h5>
+
+    <div class="scoreboard">
+        <h3>Time Left :<span id="time"></span></h3>
+        <h3>Score :<span id="score"></span></h3>
+
+</div>
+</div>
+    <script src="play.js"></script>
+</body>
+</div>
+</html>

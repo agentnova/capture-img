@@ -1,0 +1,136 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+-webkit-font-smoothing: antialiased;
+}
+
+#result{
+
+
+position:relative;
+background:black;
+border-radius:5px;
+width:50%;
+
+padding:16px 32px;
+text-align:center;
+vertical-align:center;
+color:white;
+left:25%;
+top:80%;
+margin-top:50%;
+display:none;
+
+
+}
+
+
+@keyframes slideInFromLeft {
+	            0% {
+	                transform: translateX(-100%);
+	            }
+	
+
+	            100% {
+	                transform: translateX(0);
+	            }
+	        }
+
+
+
+
+
+#main{
+background:white;
+text-align:center;
+margin-top:10%;
+}
+#secondmain{
+display:none;
+}
+#timer{
+padding-top:20px;
+font-size:23em;
+text-align:center;
+vertical-align:center;
+color:black;
+}
+
+
+
+
+
+
+button {
+  background-color: #333;
+  border: 2px solid darkred;
+  color: white;
+border-radius:5px;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+position: relative;
+left:0%; 
+}
+
+
+
+
+button::hover{
+ background-color: darkred
+  color: white;
+}
+
+
+
+
+
+
+.first h6{
+  text-align:center;
+  margin-top:8%;
+  color:#333;
+}
+.first h1{
+  text-align:center;
+  font-size: 4em;
+  color: darkred;
+  margin-top: 2%;
+    margin-bottom: 5%;
+}
+.second input{
+  background: white;
+  width: 80%;
+  padding: 10px;
+  border-radius: 5px;
+  border:2px solid black;
+  outline: none;
+}
+
+.second input:focus{
+  border:2px solid red;
+}
+.second input[placeholder="Start Typing..."]{
+  color:#333;
+}
+.scoreboard{
+position:relative;
+left:9%;
+  padding: 2%;
+}
+.scoreboard h3{
+  display: inline-block;
+  margin:8%;
+}
+#score{
+    color:green;
+}
+#time{
+    color:red;
+}
