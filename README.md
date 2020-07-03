@@ -1,3 +1,3 @@
 # speed-word
 
-A simple speed typing game written in JavaScript
+>A simple speed typing game written in JavaScript
