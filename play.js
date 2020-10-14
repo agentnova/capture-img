@@ -6,8 +6,6 @@ hard:2
 }
 
 var currentlevel=levels.easy;
-
-
 var time = currentlevel;
 var score = 0;
 var playing;
@@ -21,11 +19,8 @@ var seconds = document.getElementById("seconds");
 var message = document.getElementById("message");
 var main=document.getElementById("main");
 var secmain=document.getElementById("secondmain");
-
 var finalscore=document.getElementById("finalscore");
-
 var result=document.getElementById("result");
-
 var timer = document.getElementById("timer");
 
 
@@ -56,20 +51,8 @@ var words = [
 'Forgetful'
 ];
 
-
-
-
-
-
-
-
-
-
-
-
-
 function init() {
-     timerstart();
+    timerstart();
     showword(words);
     inputword.addEventListener('input', checkmatch);
     setInterval(countdown, 1000);
@@ -77,46 +60,24 @@ function init() {
 
 }
 
-
-
-
-
-
-
-
-function timerstart()
-{
-setInterval (timerload, 1000);
+function timerstart(){
+  setInterval (timerload, 1000);
 }
 
 
-function timerload()
-{
-
-
-if (loadtime > 0) {
+function timerload(){
+   if (loadtime > 0) {
         loadtime--;
         playing=false;
 
-    }
-else if(loadtime==0)
-{
-main.style.display="none";
-secmain.style.display="grid";
-playing=true;
+   }
+   else if(loadtime==0){
+      main.style.display="none";
+      secmain.style.display="grid";
+      playing=true;
+   }
+   timer.innerHTML = loadtime;
 }
-
-    timer.innerHTML = loadtime;
-}
-
-
-
-
-
-
-
-
-
 
 function checkmatch() {
     if (match()) {
@@ -128,11 +89,11 @@ function checkmatch() {
     }
     if (score == -1) {
         showscore.innerHTML = 0;
-    } else {
+    } 
+    else {
         showscore.innerHTML = score;
         finalscore.innerHTML=score;
     }
-
 }
 
 function match() {
@@ -140,15 +101,13 @@ function match() {
         message.style.color="green";
         message.innerHTML = 'Correct'
         inputword.style.border="2px solid green";
-
         return true;
-    } else {
-        message.innerHTML = '&nbsp;';
+    } 
+    else {
+     message.innerHTML = '&nbsp;';
      inputword.style.border="2px solid red";
-
-        return false;
+     return false;
     }
-
 }
 
 
@@ -158,32 +117,28 @@ function showword(words) {
 }
 
 function countdown() {
-if(playing){
+  if(playing){
     if (time > 0) {
         time--;
-
-    } else if (time == 0) {
+    } 
+    else if (time == 0) {
         playing = false;
     }
-
     showtime.innerHTML = time;
-
-}
+   }
 }
 
 function status() {
     if (!playing && time == 0) {
-         message.style.color="red";
+        message.style.color="red";
         message.innerHTML = 'Game over';
         score = -1;
         secmain.style.display="none";
         main.style.display="none";
         result.style.display="grid";
-    result.style.animation= "0.5s ease-out 0s 1 slideInFromLeft";
-       
+        result.style.animation= "0.5s ease-out 0s 1 slideInFromLeft";
     }
-if(message.innerHTML=='')
-{
-message.innerHTML='&nbsp';
-}
+    if(message.innerHTML==''){
+        message.innerHTML='&nbsp';
+    }
 }
