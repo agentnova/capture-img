@@ -1,9 +1,5 @@
 window.addEventListener('load', init);
-var levels={
-easy:5,
-medium:3,
-hard:2
-}
+var levels={easy:5,medium:3,hard:2}
 
 var currentlevel=levels.easy;
 var time = currentlevel;
@@ -23,33 +19,7 @@ var finalscore=document.getElementById("finalscore");
 var result=document.getElementById("result");
 var timer = document.getElementById("timer");
 
-
-var words = [
-'Amount',
-'Instinctive',
-'Left',
-'Letter',
-'Type',
-'Living',
-'Enormous',
-'Stage',
-'Cure',
-'Wave',
-'Gorgeous',
-'Melt',
-'Glue',
-'Decisive',
-'Sheep',
-'Cry',
-'Frail',
-'Unbiased',
-'Hapless',
-'Color',
-'Pickle',
-'Stroke',
-'Hobbies',
-'Forgetful'
-];
+var words = ['Amount','Instinctive','Left','Letter','Type','Living','Enormous','Stage','Cure','Wave','Gorgeous','Melt','Glue','Decisive','Sheep','Cry','Frail','Unbiased','Hapless','Color','Pickle','Stroke','Hobbies','Forgetful'];
 
 function init() {
     timerstart();
@@ -109,7 +79,6 @@ function match() {
      return false;
     }
 }
-
 
 function showword(words) {
     var index = Math.floor(Math.random() * words.length);
